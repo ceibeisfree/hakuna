@@ -9,13 +9,13 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+/* .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
-}
+} */
 
 .hero{
     width: 100%;
