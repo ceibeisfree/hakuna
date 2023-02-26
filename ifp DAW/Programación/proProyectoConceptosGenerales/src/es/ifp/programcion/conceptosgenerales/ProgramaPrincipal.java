@@ -1,6 +1,5 @@
 package es.ifp.programcion.conceptosgenerales;
 
-import java.util.Vector;
 
 public class ProgramaPrincipal {
 	
