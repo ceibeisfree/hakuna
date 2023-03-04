@@ -1,4 +1,4 @@
-package es.ifp.programcion.conceptosgenerales;
+package es.ifp.programacion.conceptosgenerales;
 
 
 public class ProgramaPrincipal {
