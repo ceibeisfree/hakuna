@@ -5,7 +5,7 @@ package es.ifp.programacion.uf1.condicional;
  * @author hakuna matata
  *
  */
-public class ProgramaPrincipal {
+public class condicional {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
