@@ -22,11 +22,19 @@ public class PrimerProgramaSuma {
 		
 		// Entrada de datos
 		
-		System.out.println("Introduzca el primer número");
+		System.out.println("Introduzca el primer número:");
 		num1 = Integer.parseInt(sc.nextLine());
 		
-		System.out.println("Introduzca el segundo número");
+		System.out.println("Introduzca el segundo número:");
 		num2 = Integer.parseInt(sc.nextLine());
+		
+		// Transformacion de datos
+		
+		result = num1 + num2;
+		
+		// Salida de datos
+		
+		System.out.println("Resultado de la suma: "+result);
 		
 		
 	}
