@@ -1,0 +1,12 @@
+Enunciado:
+
+Dados dos números, el programa indicará si el primer número es mayor, menor o igual que el segundo.
+
+Por ejemplo:
+
+>Introduce el primer número:
+5
+>Introduce el segundo número:
+6
+
+> El primer número es menor que el segundo número.
