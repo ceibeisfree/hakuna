@@ -1,10 +1,10 @@
 Algoritmo ejemplo_anidamientos
 	Definir nota como Entero
-	nota <- 5
+	nota <- 10
 	Si nota>=9 Entonces
 		Escribir "Sobresaliente"
 	SiNo
-		Si nona>=7 Entonces
+		Si nota>=7 Entonces
 			Escribir "Notable"
 		SiNo
 			Si nota>=6 Entonces

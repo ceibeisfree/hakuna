@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de input</title>
+</head>
+
+<!-- 
+    input type:
+        button -> Se comporta igual que un botón <button>
+        submit -> se utiliza para enviar el formulario
+
+        date: -> Se utiliza para introducir una fecha
+        datetime -> Obsoleto
+        datetime-local -> fecha y hora, no funciona en firefox
+        time -> Se utiliza para introducir un hora
+            TIP
+                *Se recomienda usar datetime-local y time para seleccionar fecha y hora
+                month -> Se utiliza para introducir un mes
+                week -> Se utiliza para introducir el número de semana del año 
+                
+                search -> Se utiliza para las barras de búsqueda
+        tel -> Se utiliza para introducir números telefónicos
+        email -> Se utiliza para introducir un email
+        password -> Se utiliza para contraseñas
+        url -> Se utiliza para introducir URLs
+        
+        color: -> Se utiliza para especificar un color
+        number -> Se utiliza para valore numéricos
+        range -> Se utiliza para establecer un rango
+        reset -> Se utiliza para resetear el formulario
+        text -> Valor por defecto 
+        hidden -> Campo oculto, puede contener valor pero no se mostrar
+    -->
+
+<body>
+
+    <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="5" min="0" max="10">
+        <input type="reset">
+        <input type="text">
+        <!-- <input type="submit" value="Enviar input">
+        <input type="date">
+        <input type="time">
+        <input type="month">
+        <input type="week"> -->
+    <!-- <div>
+        <label> search
+            <input type="search">
+        </label>
+    </div>  
+    <div>
+        <label> teléfono
+            <input type="tel">
+        </label>
+    </div> 
+    <div>
+        <label> email
+            <input type="email">
+        </label>
+    </div> 
+    <div>
+        <label> password
+            <input type="password">
+        </label>
+    </div>
+    <div>
+        <label> url
+            <input type="url">
+        </label>
+    </div> -->
+
+    </form>    
+ 
+</body>
+</html>
