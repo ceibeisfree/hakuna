@@ -1,5 +1,7 @@
 package es.ifp.programacion.EjercicioPropuesto2;
 
+import java.util.Scanner;
+
 /**
  * Ejercicio propuesto 2:
 Operadores y operaciones booleanas
@@ -28,6 +30,45 @@ public class Ejercicio_Propuesto_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// 1. Declaracion de variables
+		
+		String dato1;
+		String dato2;
+		
+		boolean esMenor;
+		boolean esIgual;
+		boolean esMayor;
+		
+		int dato1n;
+		int dato2n;
+		
+		// 2. Intrucciones
+		
+		// 2.1 Entrada de datos 
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Inroduce el primer numero");
+		dato1 =	sc.nextLine();
+		
+		System.out.println("Introduce el segundo numero");
+		dato2 = sc.nextLine();
+		
+		// 2.2 Trasformacion
+		
+		dato1n = Integer.parseInt(dato1);
+		dato2n = Integer.parseInt(dato2);
+		
+		esMenor = (dato1n<dato2n);
+		esIgual = (dato1n==dato2n);
+		esMayor = (dato1n>dato2n);
+		
+		// 2.3 Salida de datos
+		
+		System.out.println("¿El numero 1 es menor que el numero 2?: "+esMenor);
+		System.out.println("¿El numero 1 es igual que el numero 2?: "+esIgual);
+		System.out.println("¿El numero 1 es mayor que el numero 2?: "+esMayor);
 
 	}
 
