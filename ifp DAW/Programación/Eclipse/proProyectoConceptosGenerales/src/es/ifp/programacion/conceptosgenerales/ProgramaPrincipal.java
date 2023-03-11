@@ -1,6 +1,10 @@
 package es.ifp.programacion.conceptosgenerales;
 
-
+/**
+ * 
+ * @author https:/github.com/ceibeisfree
+ *
+ */
 public class ProgramaPrincipal {
 	
 	

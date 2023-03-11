@@ -12,7 +12,7 @@ package es.ifp.programacion.EjercicioPropuesto5;
 	En caso contrario se mostrará un mensaje indicando la finalización del programa como sigue: 
 	"Finalización del programa".
 
- * @author hakuna matata
+ * @author https:/github.com/ceibeisfree
  *
  */
 

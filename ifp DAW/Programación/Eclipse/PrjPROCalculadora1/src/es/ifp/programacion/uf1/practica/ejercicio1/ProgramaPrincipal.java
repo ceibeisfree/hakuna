@@ -104,7 +104,7 @@ package es.ifp.programacion.uf1.practica.ejercicio1;
 	“Opción incorrecta” y a continuación mostrar de nuevo el menú para solicitar
 	de nuevo la opción al usuario
 
- * @author hakuna matata
+ * @author https:/github.com/ceibeisfree
  *
  */
 
@@ -113,6 +113,21 @@ public class ProgramaPrincipal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// A. Declaracion de variables
+		
+		
+		
+				// B. Instrucciones
+				
+				// B.1 Entradada de datos
+				
+				
+				
+				// B.2 Transformacion
+				
+				
+				
+				// B.3 Salda de datos
 	}
 
 }
