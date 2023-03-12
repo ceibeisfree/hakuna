@@ -44,6 +44,8 @@ public class ProgramaPrincipal {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		
+		
 		int sign=0;
 		
 		// B. Instrucciones
@@ -102,8 +104,43 @@ public class ProgramaPrincipal {
 				
 				
 				// B.2 Transformacion
+		if (sign<=0)
+			System.out.println("El programa Finaliza");
+			//break; //Instruccion de ruptura
+			
+		else {
+			
+			if (sign>=1)
+				System.out.println("El programa contiua...");
+			
+			else {
 				
-		
+				if (sign>=2)
+					System.out.println("El programa continua...");
+					
+				else {
+					
+					if (sign>=3)
+					   System.out.println("El programa continua...");
+					
+					else {
+						
+						if (sign>=4)
+							System.out.println("El programa continua...");
+						
+						else {
+							
+							if (sign>=5)
+							    System.out.println("El programa continua...");
+							
+							else 
+								System.out.println("El programa se reinicia");
+							
+						}				
+					}
+				}		
+			}
+		}
 				
 				// B.3 Salida de datos
 		
