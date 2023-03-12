@@ -35,20 +35,17 @@ public class ProgramaPrincipal {
 
 	public static void main(String[] args) {
 
-		// A. Declaracion de variables
-		
 		/** 3. La calculadora solo funcionará con números decimales. */
+		
+		int i;
 		
 		float num1=0.0f;
 		float num2=0.0f;
 		
+		float result=0.0f;
+		
 		Scanner sc = new Scanner(System.in);
-		
-		
-		
-		int sign=0;
-		
-		// B. Instrucciones
+				
 		
 		/** 4. La primera línea deberá mostrar una cabecera como sigue:
 	
@@ -57,10 +54,7 @@ public class ProgramaPrincipal {
 		System.out.println("");
 		System.out.println("============ CALCULADORA :: GESTIÓN DE AGUAS, SL ============");
 		System.out.println("");
-		
-				// B.1 Entradada de datos
-		
-		
+
 		/** 5. Tras la primera línea del apartado anterior, se mostrará un menú hasta que el usuario
 			pulse la opción Salir. El menú se mostrará tal y como sigue:
 			Introduzca una opción del menú:
@@ -89,135 +83,200 @@ public class ProgramaPrincipal {
 		
 		System.out.println("");
 		System.out.println("Introduzca una opción:");
-		sign = Integer.parseInt(sc.nextLine());
-		
-		
-		
-		System.out.println("");
-		System.out.println("Introduzca el primer número:");
-		num1 = Float.parseFloat(sc.nextLine());
-		
-		System.out.println("");
-		System.out.println("Introduzca el segundo número:");
-		num2 = Float.parseFloat(sc.nextLine());
-				
-				
-				
-				// B.2 Transformacion
-		if (sign<=0)
-			System.out.println("El programa Finaliza");
-			//break; //Instruccion de ruptura
+		i = Integer.parseInt(sc.nextLine());
+
+		if (i==0) {
+			/** 0 Salir (0,5 puntos)
+			El programa se ejecutará una y otra vez hasta que el usuario pulse la opción 0. Al
+			pulsar 0 el programa finalizará y mostrará un texto informativo “El programa ha
+			finalizado” */
 			
+			System.out.println("El programa ha finalizado");
+		}
+						
 		else {
 			
-			if (sign>=1)
-				System.out.println("El programa contiua...");
+			if (i==1) {
+				/**	A continuación, se explican cada una de las opciones:
+				1. Sumar (0.5 puntos)
+				El programa mostrará al usuario:
+				Introduzca el primer número:
+				(el usuario introducirá el número y le dará al botón Enter)
+				Introduzca el segundo número:
+				(el usuario introducirá el número y le dará al botón Enter)
+				El programa mostrará el resultado con el siguiente formato:
+				===================================
+				La suma de NUM1 y NUM2 es RESULTADO
+				===================================
+				Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
+				RESULTADO el resultado de la operación suma.*/
+				
+				System.out.println("");
+				System.out.println("Introduzca el primer número:");
+				num1 = Float.parseFloat(sc.nextLine());
+				
+				System.out.println("");
+				System.out.println("Introduzca el segundo número:");
+				num2 = Float.parseFloat(sc.nextLine());
+				
+				result = num1 + num2;
+				System.out.println("===================================");
+				System.out.println("La suma de NUM1 y NUM2 es RESULTADO");
+				System.out.println("===================================");
+				System.out.println(result);
+				
+			}
 			
 			else {
 				
-				if (sign>=2)
-					System.out.println("El programa continua...");
+				if (i==2) {
+					/**2. Restar (0.5 puntos)
+					El programa mostrará al usuario:
+					Introduzca el primer número:
+					(el usuario introducirá el número y le dará al botón Enter)
+					Introduzca el segundo número:
+					(el usuario introducirá el número y le dará al botón Enter)
+					El programa mostrará el resultado con el siguiente formato:
+					====================================
+					La resta de NUM1 y NUM2 es RESULTADO
+					====================================
+					Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
+					RESULTADO el resultado de la operación resta.*/
+
+					System.out.println("");
+					System.out.println("Introduzca el primer número:");
+					num1 = Float.parseFloat(sc.nextLine());
 					
+					System.out.println("");
+					System.out.println("Introduzca el segundo número:");
+					num2 = Float.parseFloat(sc.nextLine());
+					
+					result = num1 - num2;
+					System.out.println("====================================");
+					System.out.println("La resta de NUM1 y NUM2 es RESULTADO");
+					System.out.println("====================================");
+					System.out.println(result);
+				}
+				
 				else {
 					
-					if (sign>=3)
-					   System.out.println("El programa continua...");
-					
+					if (i==3) {
+						/** 3. Multiplicar (0.5 puntos)
+						El programa mostrará al usuario:
+						Introduzca el primer número:
+						(el usuario introducirá el número y le dará al botón Enter)
+						Introduzca el segundo número:
+						(el usuario introducirá el número y le dará al botón Enter)
+						El programa mostrará el resultado con el siguiente formato:
+						=============================================
+						La multiplicación de NUM1 y NUM2 es RESULTADO
+						=============================================
+						Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
+						RESULTADO el resultado de la multiplicación de ambos números. */
+						
+						System.out.println("");
+						System.out.println("Introduzca el primer número:");
+						num1 = Float.parseFloat(sc.nextLine());
+						
+						System.out.println("");
+						System.out.println("Introduzca el segundo número:");
+						num2 = Float.parseFloat(sc.nextLine());
+						
+						result = num1 * num2;
+						System.out.println("=============================================");
+						System.out.println("La multiplicación de NUM1 y NUM2 es RESULTADO");
+						System.out.println("=============================================");
+						System.out.println(result);
+					}
+
 					else {
 						
-						if (sign>=4)
-							System.out.println("El programa continua...");
+						if (i==4) {
+							/** 4. Dividir (0,5 puntos)
+							El programa mostrará al usuario:
+							Introduzca el primer número:
+							(el usuario introducirá el número y le dará al botón Enter)
+							Introduzca el segundo número:
+							(el usuario introducirá el número y le dará al botón Enter)
+							El programa mostrará el resultado con el siguiente formato:
+							==========================================
+							La división entre NUM1 y NUM2 es RESULTADO
+							==========================================
+							Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
+							RESULTADO el resultado de la operación división. */
+							
+							System.out.println("");
+							System.out.println("Introduzca el primer número:");
+							num1 = Float.parseFloat(sc.nextLine());
+							
+							System.out.println("");
+							System.out.println("Introduzca el segundo número:");
+							num2 = Float.parseFloat(sc.nextLine());
+							
+							result = num1 / num2;
+							System.out.println("==========================================");
+							System.out.println("La división entre NUM1 y NUM2 es RESULTADO");
+							System.out.println("==========================================");
+							System.out.println(result);
+						}
+
 						
 						else {
 							
-							if (sign>=5)
-							    System.out.println("El programa continua...");
+							if (i==5) {
+								/** 5. Resto o módulo (0,5 punto)
+								El programa mostrará al usuario:
+								Introduzca el primer número:
+								(el usuario introducirá el número y le dará al botón Enter)
+								Introduzca el segundo número:
+								(el usuario introducirá el número y le dará al botón Enter)
+								El programa mostrará el resultado con el siguiente formato:
+								=======================================
+								El resto entre NUM1 y NUM2 es RESULTADO
+								=======================================
+								Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
+								RESULTADO el resultado de la operación resto, también denominada módulo. */
+								
+								System.out.println("");
+								System.out.println("Introduzca el primer número:");
+								num1 = Float.parseFloat(sc.nextLine());
+								
+								System.out.println("");
+								System.out.println("Introduzca el segundo número:");
+								num2 = Float.parseFloat(sc.nextLine());
+								
+								result = num1 % num2;
+								System.out.println("=============================================");
+								System.out.println("El resto de NUM1 y NUM2 es RESULTADO");
+								System.out.println("=============================================");
+								System.out.println(result);
+							}
+
 							
-							else 
+							else {
+								/** En caso de no introducir un número del 0 al 6 se deberá mostrar un mensaje
+								“Opción incorrecta” y a continuación mostrar de nuevo el menú para solicitar
+								de nuevo la opción al usuario */
 								System.out.println("El programa se reinicia");
-							
-						}				
+							}	
+						}
+
 					}
-				}		
-			}
+				}
+			}			
+	
 		}
-				
-				// B.3 Salida de datos
-		
-		/**	A continuación, se explican cada una de las opciones:
-		1. Sumar (0.5 puntos)
-		El programa mostrará al usuario:
-		Introduzca el primer número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		Introduzca el segundo número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		El programa mostrará el resultado con el siguiente formato:
-		===================================
-		La suma de NUM1 y NUM2 es RESULTADO
-		===================================
-		Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
-		RESULTADO el resultado de la operación suma.
-		2. Restar (0.5 puntos)
-		El programa mostrará al usuario:
-		Introduzca el primer número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		5
-		Introduzca el segundo número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		El programa mostrará el resultado con el siguiente formato:
-		====================================
-		La resta de NUM1 y NUM2 es RESULTADO
-		====================================
-		Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
-		RESULTADO el resultado de la operación resta.
-		3. Multiplicar (0.5 puntos)
-		El programa mostrará al usuario:
-		Introduzca el primer número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		Introduzca el segundo número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		El programa mostrará el resultado con el siguiente formato:
-		=============================================
-		La multiplicación de NUM1 y NUM2 es RESULTADO
-		=============================================
-		Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
-		RESULTADO el resultado de la multiplicación de ambos números.
-		4. Dividir (0,5 puntos)
-		El programa mostrará al usuario:
-		Introduzca el primer número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		Introduzca el segundo número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		El programa mostrará el resultado con el siguiente formato:
-		==========================================
-		La división entre NUM1 y NUM2 es RESULTADO
-		6
-		==========================================
-		Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
-		RESULTADO el resultado de la operación división.
-		5. Resto o módulo (0,5 punto)
-		El programa mostrará al usuario:
-		Introduzca el primer número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		Introduzca el segundo número:
-		(el usuario introducirá el número y le dará al botón Enter)
-		El programa mostrará el resultado con el siguiente formato:
-		=======================================
-		El resto entre NUM1 y NUM2 es RESULTADO
-		=======================================
-		Donde NUM1 y NUM2 son los números introducidos por el usuario y siendo
-		RESULTADO el resultado de la operación resto, también denominada módulo.
-		0 Salir (0,5 puntos)
-		El programa se ejecutará una y otra vez hasta que el usuario pulse la opción 0. Al
-		pulsar 0 el programa finalizará y mostrará un texto informativo “El programa ha
-		finalizado”.
-		En caso de no introducir un número del 0 al 6 se deberá mostrar un mensaje
-		“Opción incorrecta” y a continuación mostrar de nuevo el menú para solicitar
-		de nuevo la opción al usuario
-
-	 * @author https:/github.com/ceibeisfree
-	 *
-	 */
 	}
-
 }
+
+				
+
+		
+		
+		
+		
+		
+		
+		
+
+	 
