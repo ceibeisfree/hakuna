@@ -246,9 +246,9 @@ public class ProgramaPrincipal {
 								num2 = Float.parseFloat(sc.nextLine());
 								
 								result = num1 % num2;
-								System.out.println("=============================================");
-								System.out.println("El resto de NUM1 y NUM2 es RESULTADO");
-								System.out.println("=============================================");
+								System.out.println("=======================================");
+								System.out.println("El resto entre NUM1 y NUM2 es RESULTADO");
+								System.out.println("=======================================");
 								System.out.println(result);
 							}
 
