@@ -37,7 +37,7 @@ public class ProgramaPrincipal {
 
 		/** 3. La calculadora solo funcionará con números decimales. */
 		
-		int i;
+		int i=0;
 		
 		float num1=0.0f;
 		float num2=0.0f;
@@ -84,7 +84,7 @@ public class ProgramaPrincipal {
 		System.out.println("");
 		System.out.println("Introduzca una opción:");
 		i = Integer.parseInt(sc.nextLine());
-
+		
 		if (i==0) {
 			/** 0 Salir (0,5 puntos)
 			El programa se ejecutará una y otra vez hasta que el usuario pulse la opción 0. Al
@@ -94,6 +94,7 @@ public class ProgramaPrincipal {
 			System.out.println("El programa ha finalizado");
 		}
 						
+		
 		else {
 			
 			if (i==1) {
@@ -160,7 +161,7 @@ public class ProgramaPrincipal {
 				
 				else {
 					
-					if (i==3) {
+					if (i==1) {
 						/** 3. Multiplicar (0.5 puntos)
 						El programa mostrará al usuario:
 						Introduzca el primer número:
@@ -257,13 +258,16 @@ public class ProgramaPrincipal {
 								/** En caso de no introducir un número del 0 al 6 se deberá mostrar un mensaje
 								“Opción incorrecta” y a continuación mostrar de nuevo el menú para solicitar
 								de nuevo la opción al usuario */
-								System.out.println("El programa se reinicia");
+								
+								System.out.println("Opción incorrecta");
 							}	
+																		
 						}
 
 					}
 				}
-			}			
+			}
+	
 	
 		}
 	}
