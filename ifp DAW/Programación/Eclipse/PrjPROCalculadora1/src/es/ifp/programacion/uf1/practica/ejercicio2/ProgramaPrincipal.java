@@ -1,5 +1,7 @@
 package es.ifp.programacion.uf1.practica.ejercicio2;
 
+import java.util.Scanner;
+
 /**
 	 * Parte 2: Utilizando funciones.
 	La empresa desea mejorar el desarrollo implementando una nueva versión de la calculadora
@@ -53,7 +55,150 @@ public class ProgramaPrincipal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+				
+		
+		Scanner sc = new Scanner(System.in);
+		String str;
+		int lon;
+		
+		
+		System.out.println("");
+		System.out.println("============ CALCULADORA :: GESTIÓN DE AGUAS, SL ============");
+		System.out.println("");
+		
+		do {
+		muestraMenu();
+		System.out.println("Introduzca la opción a ejecutar:");
+		String opcion = sc.nextLine();
+		float num1=0.0f;
+		float num2=0.0f;
+		
+		float result=0.0f;
+		
+		switch {
+			case "1": 
+				System.out.println("Sumar (+)");
+				str = sc.nextLine();
+				System.out.println("");
+				System.out.println("Introduzca el primer número:");
+				num1 = Float.parseFloat(sc.nextLine());
+				
+				System.out.println("");
+				System.out.println("Introduzca el segundo número:");
+				num2 = Float.parseFloat(sc.nextLine());
+				
+				result = num1 + num2;
+				System.out.println("===================================");
+				System.out.println("La suma de NUM1 y NUM2 es RESULTADO");
+				System.out.println("===================================");
+				System.out.println(result);
+				break;
+				
+			case "2": 
+				System.out.println("Restar (-) ");
+				str = sc.nextLine();
+				
+				System.out.println("");
+				System.out.println("Introduzca el primer número:");
+				num1 = Float.parseFloat(sc.nextLine());
+				
+				System.out.println("");
+				System.out.println("Introduzca el segundo número:");
+				num2 = Float.parseFloat(sc.nextLine());
+				
+				result = num1 - num2;
+				System.out.println("====================================");
+				System.out.println("La resta de NUM1 y NUM2 es RESULTADO");
+				System.out.println("====================================");
+				System.out.println(result);
+				break;
+				
+			case "3": 
+				System.out.println("Multiplicar (*)");
+				System.out.println("");
+				System.out.println("Introduzca el primer número:");
+				num1 = Float.parseFloat(sc.nextLine());
+				
+				System.out.println("");
+				System.out.println("Introduzca el segundo número:");
+				num2 = Float.parseFloat(sc.nextLine());
+				
+				result = num1 * num2;
+				System.out.println("=============================================");
+				System.out.println("La multiplicación de NUM1 y NUM2 es RESULTADO");
+				System.out.println("=============================================");
+				System.out.println(result);				
+				break;
+				
+			case "4": 
+				System.out.println("Dividir (/)"); 
+				System.out.println("");
+				System.out.println("Introduzca el primer número:");
+				num1 = Float.parseFloat(sc.nextLine());
+				
+				System.out.println("");
+				System.out.println("Introduzca el segundo número:");
+				num2 = Float.parseFloat(sc.nextLine());
+				
+				result = num1 / num2;
+				System.out.println("==========================================");
+				System.out.println("La división entre NUM1 y NUM2 es RESULTADO");
+				System.out.println("==========================================");
+				System.out.println(result);
+				break;
+				
+			case "5": 
+				System.out.println("Resto (%)"); 
+				System.out.println("");
+				System.out.println("Introduzca el primer número:");
+				num1 = Float.parseFloat(sc.nextLine());
+				
+				System.out.println("");
+				System.out.println("Introduzca el segundo número:");
+				num2 = Float.parseFloat(sc.nextLine());
+				
+				result = num1 % num2;
+				System.out.println("=======================================");
+				System.out.println("El resto entre NUM1 y NUM2 es RESULTADO");
+				System.out.println("=======================================");
+				System.out.println(result);
+				break;
+			
+			case "0": 
+				break;
+		System.out.println("Opción incorrecta");break;
+		
+		}
+		while (!opcion.equals("5"));
+		
+		System.out.println("Fin de la ejecución del programa");
 	}
+	
+	
+	
+	public static void muestraMenu() {
+		System.out.println("");
+		System.out.println("Introduzca una opción del menú:");
+		
+		System.out.println("");
+		System.out.println("1. Sumar (+)");				   
+		System.out.println("2. Restar (-)");
+		System.out.println("3. Multiplicar (*)");
+		System.out.println("4. Dividir (/)");
+		System.out.println("5. Resto. (%)");
+		System.out.println("0. Salir (S o s)");
+		
+		System.out.println("");
+		System.out.println("Introduzca una opción:");
+		
+	}
+	
+	
+	public static int result(String str) {
+		return str.length();
+	}
+	
+	
 
 }
