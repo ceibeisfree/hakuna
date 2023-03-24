@@ -83,8 +83,8 @@ public class ProgramaPrincipal {
 				System.out.println("");
 				System.out.println("Introduzca el primer número:");
 				num1 = Float.parseFloat(sc.nextLine());
-				
 				System.out.println("");
+				
 				System.out.println("Introduzca el segundo número:");
 				num2 = Float.parseFloat(sc.nextLine());
 				
