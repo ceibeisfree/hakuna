@@ -19,6 +19,8 @@ public class recursividad {
 		int result;
 		Scanner sc = new Scanner(System.in);
 	
+		do {
+			
 		System.out.println("Introduzca un numero para calcular su factorial: ");
 		num = Integer.parseInt(sc.nextLine());
 		
@@ -26,6 +28,7 @@ public class recursividad {
 		
 		System.out.println("El factorial de "+num+" es: "+result);
 		
+		}while (num!=0);
 				
 	}
 	
@@ -40,7 +43,7 @@ public class recursividad {
 	
 	public static int factorial(int n) {
 		
-		if (n==1)
+		if (n<=1)
 			return 1;
 		else
 			return n * factorial(n-1);
