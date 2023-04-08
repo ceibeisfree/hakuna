@@ -14,19 +14,6 @@ public class Persona {
 	private int edad;
 	private String correoElectronico;
 	
-	//Atributo de clase
-	static String nacionalidad="España";  
-	
-	/**
-	 * Constructor por defecto
-	 */
-	public Persona() {
-		nombre="";
-		apellidos="";
-		edad=0;	
-		correoElectronico="";
-	}
-	
 	/**
 	 * Costructor con tres parametros: nom, ape, ed
 	 * @param nom Nombre de la persona
@@ -51,31 +38,75 @@ public class Persona {
 		this.apellidos=ape;
 		this.edad=ed;
 		this.correoElectronico=correo;
-	}	
+	}
 
-	
-	public void cambiarCorreoElectronico(String correoElectronico) {
-		this.correoElectronico=correoElectronico;
-		
+	/**
+	 * Metodo que retorna el nombre de la persona
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	/**
+	 * Metodo que modifica el nombre de la persona
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * Metodo que retorna los apellidos de la persona
+	 * @return the apellidos
+	 */
+	public String getApellidos() {
+		return this.apellidos;
+	}
+
+	/**
+	 * Metodo que modifica los apellidos de la persona
+	 * @param apellidos the apellidos to set
+	 */
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	/**
+	 * Metodo que retorna la edad de la persona
+	 * @return the edad
+	 */
+	public int getEdad() {
+		return this.edad;
+	}
+
+	/**
+	 * Metodo que modifica la edad de la persona
+	 * @param edad the edad to set
+	 */
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	/**
+	 * Metodo que retorna el corre de la persona
+	 * @return the correoElectronico
+	 */
+	public String getCorreoElectronico() {
+		return this.correoElectronico;
+	}
+
+	/**
+	 * Metodo que modifica el correo de la persona
+	 * @param correoElectronico the correoElectronico to set
+	 */
+	public void setCorreoElectronico(String correoElectronico) {
+		this.correoElectronico = correoElectronico;
 	}
 	
-	public void mirar () {
-		System.out.println(this.nombre+" esta mirando");
-		System.out.println("Nacionalidad "+nacionalidad);
-	}
-	
-	public static void imprimeNacionalidad() {
-		System.out.println(nacionalidad);
-		
-	}
 	
 	
-	
-	
-	
-	
-	
-	
+
 	
 	
 }
